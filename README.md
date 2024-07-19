@@ -68,5 +68,5 @@ My LinkedIn: [https://www.linkedin.com/in/elina-krs/](https://www.linkedin.com/i
 
 ## Repository Contents
 
-- **A/B_Testing:** Jupyter notebooks with detailed analysis.
+- **Educational-platform:** Jupyter notebooks with detailed analysis.
 - **reports:** Final analytical report.
