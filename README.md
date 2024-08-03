@@ -21,17 +21,23 @@ The dataset includes the following CSV files:
 - **checks.csv**: Details of user payments during the experiment.
 
 ## Metrics for Evaluation
+## The following metrics are used to evaluate the new payment mechanism:
 
-The following metrics are used to evaluate the new payment mechanism:
+### Conversion Rate (CR)
 
-1. **Conversion Rate (CR)**
-   - Formula: \( \text{CR} = \left(\frac{\text{Number of users who made a purchase}}{\text{Total number of active users}}\right) \times 100 \)
+**Formula:**
+\[ \text{CR} = \left( \frac{\text{Number of users who made a purchase}}{\text{Total number of active users}} \right) \times 100 \]
 
-2. **Average Revenue Per User (ARPU)**
-   - Formula: \( \text{ARPU} = \frac{\text{Total Revenue}}{\text{Total number of active users}} \)
+### Average Revenue Per User (ARPU)
 
-3. **Average Revenue Per Paying User (ARPPU)**
-   - Formula: \( \text{ARPPU} = \frac{\text{Total revenue from paying users}}{\text{Number of paying users}} \)
+**Formula:**
+\[ \text{ARPU} = \frac{\text{Total Revenue}}{\text{Total number of active users}} \]
+
+### Average Revenue Per Paying User (ARPPU)
+
+**Formula:**
+\[ \text{ARPPU} = \frac{\text{Total revenue from paying users}}{\text{Number of paying users}} \]
+
 
 ## Methodology
 
