@@ -26,17 +26,17 @@ The dataset includes the following CSV files:
 ### Conversion Rate (CR)
 
 **Formula:**
-\[ \text{CR} = \left( \frac{\text{Number of users who made a purchase}}{\text{Total number of active users}} \right) \times 100 \]
+CR = (Number of users who made a purchase / Total number of active users) × 100
 
 ### Average Revenue Per User (ARPU)
 
 **Formula:**
-\[ \text{ARPU} = \frac{\text{Total Revenue}}{\text{Total number of active users}} \]
+ARPU = Total Revenue / Total number of active users
 
 ### Average Revenue Per Paying User (ARPPU)
 
 **Formula:**
-\[ \text{ARPPU} = \frac{\text{Total revenue from paying users}}{\text{Number of paying users}} \]
+ARPPU = Total revenue from paying users / Number of paying users
 
 
 ## Methodology
