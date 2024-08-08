@@ -56,6 +56,84 @@ ARPPU = Total revenue from paying users / Number of paying users
 
 The new payment mechanism led to a significant increase in ARPPU, suggesting that while conversion rates and ARPU did not improve, the new mechanism positively impacted revenue from paying users. It is recommended to continue using the new payment mechanism with potential optimizations to increase conversion rates.
 
+# SQL Queries for Educational Platform Analysis
+
+## Overview
+
+This project focuses on analyzing data from an educational platform to assess student performance and the effectiveness of a new payment mechanism. Two SQL tasks were undertaken:
+
+1. **Identifying Diligent Students**: An SQL query was written to determine the number of diligent students who correctly solved at least 20 problems in the current month.
+2. **Optimizing Funnel Conversion**: A complex SQL query was developed to analyze user behavior and payment conversions, comparing metrics between control and experimental groups.
+
+## Goals
+
+1. **Diligent Student Identification**: 
+   - To write an efficient SQL query that identifies students who demonstrate high diligence by correctly solving a significant number of problems in a given month.
+  
+2. **Funnel Conversion Optimization**:
+   - To evaluate the impact of a new payment screen on various key performance indicators (KPIs) such as ARPU, ARPAU, and conversion rates for different user segments.
+
+## Data Description
+
+### Tables Used:
+
+1. **default.peas**:
+   - **st_id** (int): Student ID.
+   - **timest** (timestamp): Time when a problem was solved.
+   - **correct** (bool): Whether the problem was solved correctly.
+   - **subject** (text): The subject area of the problem.
+
+2. **default.studs**:
+   - **st_id** (int): Student ID.
+   - **test_grp** (text): Group assignment (control or pilot) for the experiment.
+
+3. **default.final_project_check**:
+   - **st_id** (int): Student ID.
+   - **sale_time** (timestamp): Time of purchase.
+   - **money** (int): Amount paid.
+   - **subject** (text): Subject for which the course was purchased.
+
+## Metrics
+
+### 1. Diligent Student Identification
+
+**Metric**: Number of students who correctly solved at least 20 problems in the current month.
+
+### 2. Funnel Conversion Optimization
+
+The following metrics were calculated for each user group:
+
+- **ARPU**: Average Revenue Per User.
+- **ARPAU**: Average Revenue Per Active User.
+- **CR (Conversion Rate)**: The proportion of users who made a purchase.
+- **CR_activ**: Conversion rate of active users to paying users.
+- **CR_math**: Conversion rate of users active in mathematics to purchasing a mathematics course.
+
+## Results
+
+### 1. Diligent Student Identification
+
+The SQL query identified **136 diligent students** who solved at least 20 problems correctly in the current month.
+
+### 2. Funnel Conversion Optimization
+
+The SQL query yielded the following results:
+
+| Group   | ARPU    | ARPAU   | CR    | CR_activ | CR_math |
+|---------|---------|---------|-------|----------|---------|
+| Control | 4540.98 | 10820.31| 0.05  | 0.12     | 0.18    |
+| Pilot   | 11508.47| 35000.00| 0.11  | 0.34     | 0.40    |
+
+**Key Findings**:
+- The pilot group had a significantly higher ARPU, ARPAU, and conversion rates across all metrics compared to the control group.
+- The new payment screen in the pilot group led to better overall performance, indicating its effectiveness in converting users to paying customers, especially in the mathematics discipline.
+
+## Conclusion
+
+1. **Diligent Student Identification**: The query effectively identified diligent students, which can be used for further targeted interventions to enhance their learning experience.
+
+2. **Funnel Conversion Optimization**: The new payment screen was highly effective, significantly improving user engagement and revenue metrics. It is recommended to implement the new payment screen platform-wide, with a focus on further optimizing the user journey for mathematics courses.
+
 ## Contact
 
 For any questions or additional information, please contact me at elina8kr@gmail.com.
