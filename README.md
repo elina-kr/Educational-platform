@@ -134,6 +134,58 @@ The SQL query yielded the following results:
 
 2. **Funnel Conversion Optimization**: The new payment screen was highly effective, significantly improving user engagement and revenue metrics. It is recommended to implement the new payment screen platform-wide, with a focus on further optimizing the user journey for mathematics courses.
 
+# Automation of work
+
+## Overview
+
+This project involves implementing a set of functions to automate the process of loading additional data, recalculating key metrics, and generating visualizations for an educational platform. These functions are essential for dynamically updating analysis when new data becomes available, ensuring that the metrics and insights remain current.
+
+## Goals
+
+1. **Automate Data Loading**: 
+   - Implement a function to automatically load and merge data from an additional CSV file (`groups_add.csv`), handling potential differences in headers.
+  
+2. **Recalculate Metrics**: 
+   - Recalculate the previously identified metrics (Conversion Rate, ARPU, ARPPU) based on the newly loaded data.
+  
+3. **Generate Visualizations**: 
+   - Implement a function to create visualizations (bar plots) for the recalculated metrics, facilitating a clear comparison between user groups.
+
+## Implementation Details
+
+### 1. Preprocessing Function
+
+**Functionality**:
+- This function will preprocess the data by merging active student data with group assignments and payment data.
+- It will create a new column to indicate whether a user has made a payment and fill any missing revenue data with zeros.
+
+### 3. Data Loading Function
+
+**Functionality**:
+- This function will handle the loading of the additional data from `groups_add.csv`.
+- It will manage any discrepancies in headers, merge the additional data with the existing user group data, and then call the preprocessing and metrics calculation functions to update the metrics.
+
+### 4. Plotting Function
+
+**Functionality**:
+- This function will generate bar plots for the recalculated metrics, displaying CR, ARPU, and ARPPU for each user group.
+- The plots will provide a visual comparison, making it easier to interpret the impact of the new data on user behavior and revenue.
+
+## Results
+
+1. **Automated Data Loading**:
+   - The additional user data was successfully loaded and merged with the existing dataset, ensuring a seamless update of the metrics.
+  
+2. **Metrics Recalculation**:
+   - The metrics were recalculated using the new, merged data, providing an up-to-date analysis of user behavior and revenue generation.
+
+3. **Visualization**:
+   - The generated plots clearly illustrated the differences in CR, ARPU, and ARPPU between the user groups, highlighting any changes resulting from the inclusion of the additional data.
+
+## Conclusion
+
+The implemented functions effectively automated the process of loading new data, recalculating metrics, and generating visualizations. This automation ensures that the analysis remains current and relevant, allowing for timely insights and decision-making based on the most recent data available. The visualizations provide an accessible means of interpreting the metrics, supporting a more informed evaluation of the platform's performance.
+
 ## Contact
 
 For any questions or additional information, please contact me at elina8kr@gmail.com.
