@@ -201,6 +201,11 @@ My LinkedIn: [https://www.linkedin.com/in/elina-krs/](https://www.linkedin.com/i
 - Statistics
 - A/B Testing
 - Data Analysis
+- SQl
+- Pandahouse
+- ClickHouse
+- Seaborn
+- Matplotlib
 
 ## Repository Contents
 
